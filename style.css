@@ -20,6 +20,18 @@ body {
   display: inline-block;
   position: absolute;
   top: 0;
+  transition: top 1s linear;
+  cursor: pointer;
+}
+.meteor-save {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  transition: top 1s linear;
+  cursor: pointer;
 }
 
 .meteor-big {
@@ -36,6 +48,20 @@ body {
   bottom: 0;
   left: 0;
   background-color: red;
+  z-index: 5;
+}
+
+#over-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: goldenrod;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
 }
 
 /* start screen */
@@ -61,3 +87,21 @@ body {
   height: 60px;
 }
 /* start screen */
+
+.score {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 10;
+  margin: 0;
+  font-size: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
